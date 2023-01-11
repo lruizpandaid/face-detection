@@ -1,5 +1,5 @@
-Flask==1.1.4
-Werkzeug==1.0.1
-markupsafe==2.0.1
+Flask==2.2.2
+Werkzeug==2.2.2
+markupsafe==2.1.1
 tensorflow==2.11.0
 deepface==0.0.75
