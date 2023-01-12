@@ -9,7 +9,6 @@ from flask import Flask, request, jsonify, make_response
 import uuid
 import json
 import time
-import argparse
 from tqdm import tqdm
 
 #------------------------------
@@ -119,11 +118,4 @@ def analyzeWrapper(req, trx_id = 0):
 	return resp_obj
 
 if __name__ == '__main__':
-	parser = argparse.ArgumentParser()
-	parser.add_argument(
-		'-p', '--port',
-		type=int,
-		default=5000,
-		help='Port of serving api')
-	args = parser.parse_args()
-	app.run(host='0.0.0.0', port=args.port)
+	app.run()
